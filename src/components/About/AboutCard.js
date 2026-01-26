@@ -8,33 +8,31 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Hi Everyone, I am <span className="purple">Fedy Ben Hassouna </span> from <span className="purple">Tunisia.</span>
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I am currently employed as <span className="purple"> AI R&D Engineering Intern </span> at Qatar Computing Research Institute.
+            <br />
+            <br />
+            I am a <span className="purple"> Final Year Engineering Student in Software And Artificial Intelligence at INSAT  </span> :  National Institute of Applied Sciences and Technology, Tunis . 
+            <br />
+            <br />
+            I am an active member in <span className="purple">IEEE INSAT Student Branch</span> and <span className="purple">IEEE Robotics and Automation Society</span>.
+            <br />
+            <br />
+            I was technical manager for many events like 
+            <span className="purple">
+              <a href="https://nrw.ieee.tn/" target="_blank" rel="noopener noreferrer" style={{ color: "#f09d70" }}>
+                National Robotics Weekend
+              </a>
+            </span> 
+            and 
+            <span className="purple">
+              <a href="https://dataoverflow.tn/" target="_blank" rel="noopener noreferrer" style={{ color: "#f09d70" }}>
+                DataOverflow
+              </a>
+            </span>.
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>

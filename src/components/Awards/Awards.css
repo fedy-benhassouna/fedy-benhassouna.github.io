@@ -1,0 +1,123 @@
+.awards-section {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-image: var(--section-background-color);
+  min-height: 100vh;
+}
+
+.awards-heading {
+  color: var(--imp-text-color);
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.awards-subheading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+}
+
+.awards-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.reverse-row {
+  flex-direction: row-reverse;
+}
+
+.awards-img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awards-img-gallery {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.awards-img-gallery .awards-img {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+  background: #fff;
+  object-fit: cover;
+}
+
+/* Si une seule image, elle prend toute la largeur */
+.awards-img-gallery:only-child .awards-img,
+.awards-img-gallery .awards-img:only-child {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Pour 2 images, elles prennent chacune 50% moins le gap */
+.awards-img-gallery .awards-img {
+  width: 100%;
+}
+
+.awards-desc-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awards-card {
+  box-shadow: 0 4px 5px 3px rgba(236, 127, 11, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+  border: none;
+  border-radius: 18px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.awards-card:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(205, 111, 10, 0.837) !important;
+}
+
+.awards-title {
+  color: var(--imp-text-color);
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.awards-description ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .awards-row, .reverse-row {
+    flex-direction: column !important;
+  }
+  .awards-img-gallery {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .awards-img-gallery .awards-img {
+    margin-bottom: 10px;
+    max-width: 90vw;
+  }
+  .awards-card {
+    padding: 15px 10px;
+  }
+} 

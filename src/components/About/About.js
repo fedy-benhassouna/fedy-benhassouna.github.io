@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/feeed.jpeg";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -19,6 +19,7 @@ function About() {
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
+              textAlign: "center"
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
@@ -28,10 +29,20 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "30px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img 
+              src={laptopImg} 
+              alt="about" 
+              className="img-fluid" 
+              style={{ 
+                maxWidth: "500px", 
+                maxHeight: "500px",
+                width: "100%",
+                height: "auto"
+              }}
+            />
           </Col>
         </Row>
         <h1 className="project-heading">

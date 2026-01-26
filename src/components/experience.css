@@ -1,0 +1,132 @@
+.experience-page {
+  padding: 2rem 0;
+}
+
+.experience-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.experience-card-view {
+  box-shadow: 0 4px 5px 3px rgba(236, 127, 11, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.experience-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(205, 111, 10, 0.837) !important;
+}
+
+/* Header section with logo and title/company/date */
+.experience-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Logo container styles */
+.logo-container {
+  flex: 0 0 80px; /* Increased container width */
+  margin-right: 15px;
+}
+
+.company-logo {
+  width: 100px; /* Increased logo width */
+  height: 100px; /* Increased logo height */
+  object-fit: contain;
+  cursor: pointer; /* Indicates clickable */
+}
+
+/* Title container styles - only for title, company, date */
+.title-container {
+  flex: 1;
+}
+
+/* Job description and details go below the header */
+.job-details {
+  margin: 0;
+  padding-left: calc(-25px);
+  padding-right: calc(-25px);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.job-details p {
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.job-details ul {
+  margin: 0;
+  padding-left: 1em;
+  list-style-position: inside;
+}
+
+.job-details li {
+  margin: 4px 0;
+  padding: 0;
+  text-indent: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure text is readable */
+.experience-card h3,
+.experience-card h5,
+.experience-card p,
+.experience-card ul li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.experience-card .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Adjust Card structure to match provided layout */
+.experience-card .experience-header .logo-container {
+  margin-right: 15px;
+}
+
+.experience-card .experience-header .title-container {
+  display: block;
+}
+
+.experience-card .experience-header .title-container h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.experience-card .experience-header .title-container h5 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.experience-card .experience-header .title-container p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.experience-card .experience-header .title-container .type {
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.experience-card .job-details {
+  margin-top: 15px;
+}
