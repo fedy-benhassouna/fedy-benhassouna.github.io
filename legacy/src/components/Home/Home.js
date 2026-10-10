@@ -10,19 +10,22 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
+        {/* FIX: home-content has z-index:1 in CSS so it sits above the particle layer.
+                 home-section no longer has z-index:-1 (was making the whole section
+                 unclickable and pushed behind other stacking contexts). */}
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave" role="img" aria-label="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> FEDY BEN HASSOUNA </strong>
+                <strong className="main-name"> FEDY BEN HASSOUNA</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -30,10 +33,10 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20 }} className="text-center">
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt="Fedy Ben Hassouna"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />

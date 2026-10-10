@@ -1,76 +1,43 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Fedy Ben Hassouna — Portfolio
 
-<br/>
+Personal site for an AI Engineer. Dark-first, single page, React + Vite, no UI framework.
 
-<center>
+## Edit content
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+Everything you read on the site lives in **`src/data/profile.js`** (English) and
+**`src/data/profile.fr.js`** (French): hero copy, stats, skills, projects, experience, education,
+awards, contact, and the `ui` labels. Both files have the same shape; keep them in sync when you
+add or edit an entry. The EN/FR button in the nav switches language, the choice is saved in the
+browser, and first-time visitors with a French browser get French by default.
 
-</center>
+- Add a project: push an entry into `projects` (set `featured: true` for one of the three large cards).
+- Add a role: push an entry into `experience` and drop its logo in `public/logos/`.
+- Add a skill icon: import it in `src/components/Skills.jsx`, add it to `ICONS`, then reference the key in `profile.js`.
+- Replace the CV: overwrite `public/Fedy_Ben_Hassouna_CV.pdf`.
+- Update the social preview: regenerate `public/og.png` (1200×630).
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+## Run
 
-## TL;DR
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # output in dist/
+npm run preview
+```
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+## Structure
 
-## Built With
+```
+index.html              SEO, Open Graph, fonts, theme pre-script
+src/data/profile.js     all content (English)
+src/data/profile.fr.js  all content (French)
+src/i18n.jsx            language context + EN/FR switch
+src/styles/tokens.css   colors, type scale, spacing (dark + light themes)
+src/styles/base.css     reset, layout, buttons, tags, cards, reveal
+src/styles/components.css  per-section styles
+src/components/         one file per section + NeuralCanvas, Typewriter, Reveal, Nav
+src/hooks/              useTheme, useReducedMotion
+legacy/                 previous Create-React-App version, kept for reference
+```
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
-
-This project was built using these technologies.
-
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
-
-## Features
-
-**📖 Multi-Page Layout**
-
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
-
-**📱 Fully Responsive**
-
-## Getting Started
-
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
-
-## 🛠 Installation and Setup Instructions
-
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+Deploys as a static site (Vercel, Netlify, GitHub Pages). Build command `npm run build`, output `dist`.

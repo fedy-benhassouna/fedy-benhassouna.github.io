@@ -3,12 +3,14 @@ import Particles from "react-tsparticles";
 
 function Particle() {
   return (
+    // FIX: pointer-events is handled in CSS (pointer-events:none on #tsparticles)
+    // so interactive content above the particle layer receives click events correctly.
     <Particles
       id="tsparticles"
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 120, /* FIX: reduced from 160 — better perf on mid-range devices */
             density: {
               enable: true,
               value_area: 1500,
@@ -34,6 +36,9 @@ function Particle() {
           },
         },
         interactivity: {
+          // FIX: detect_on changed from default "canvas" to "window"
+          // so interaction still works even though pointer-events:none is on the element
+          detect_on: "window",
           events: {
             onclick: {
               enable: true,

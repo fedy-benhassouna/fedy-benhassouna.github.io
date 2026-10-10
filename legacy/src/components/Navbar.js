@@ -4,7 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
-import Experience from "./Experience";
+// FIX: removed unused `import Experience from "./Experience"` — was dead code
+//      and caused an unnecessary component load on every navbar render.
 
 import {
   AiOutlineHome,
@@ -13,21 +14,21 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { FaBriefcase, FaTrophy } from "react-icons/fa"; // Ajout de l'icône trophée
+import { FaBriefcase, FaTrophy } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  // FIX: use addEventListener with cleanup to prevent memory leaks
+  // (original added a new listener on every render with no removal)
+  React.useEffect(() => {
+    function scrollHandler() {
+      updateNavbar(window.scrollY >= 20);
     }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler, { passive: true });
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <Navbar
@@ -103,14 +104,13 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link} 
+                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
           </Nav>
         </Navbar.Collapse>
       </Container>

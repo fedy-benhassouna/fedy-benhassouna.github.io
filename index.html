@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fedy Ben Hassouna — AI Engineer</title>
+    <meta
+      name="description"
+      content="AI Engineer building LLM agents, RAG systems, and ML models that ship to production. Cut pump downtime 70%, manual reporting 80%. Open to AI Engineer roles."
+    />
+    <meta name="author" content="Fedy Ben Hassouna" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="canonical" href="https://fedy-benhassouna.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fedy-benhassouna.com/" />
+    <meta property="og:title" content="Fedy Ben Hassouna — AI Engineer" />
+    <meta
+      property="og:description"
+      content="LLM agents, RAG systems, and ML models that ship and move real numbers."
+    />
+    <meta property="og:image" content="https://fedy-benhassouna.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fedy Ben Hassouna — AI Engineer" />
+    <meta
+      name="twitter:description"
+      content="LLM agents, RAG systems, and ML models that ship and move real numbers."
+    />
+    <meta name="twitter:image" content="https://fedy-benhassouna.com/og.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://flagcdn.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply saved theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("fbh-theme");
+          if (!t) t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fedy Ben Hassouna",
+        "jobTitle": "AI Engineer",
+        "url": "https://fedy-benhassouna.com/",
+        "sameAs": [
+          "https://github.com/fedy-benhassouna",
+          "https://www.linkedin.com/in/fedy-ben-hassouna-9232a7249/"
+        ],
+        "alumniOf": "INSAT - National Institute of Applied Sciences and Technology",
+        "knowsAbout": ["Large Language Models", "RAG", "AI Agents", "Machine Learning", "MLOps"]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This portfolio needs JavaScript to render. Download the CV at /Fedy_Ben_Hassouna_CV.pdf.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
