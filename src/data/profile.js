@@ -7,7 +7,7 @@ export const site = {
   name: "Fedy Ben Hassouna",
   shortName: "FBH",
   role: "AI Engineer",
-  url: "https://fedy-benhassouna.com",
+  url: "https://fedy-benhassouna.github.io",
   location: "Aix-en-Provence, France · from Tunis, Tunisia",
   email: "fedy.benhassouna@insat.ucar.tn",
   github: "https://github.com/fedy-benhassouna",
