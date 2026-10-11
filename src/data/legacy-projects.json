@@ -1,0 +1,172 @@
+[
+  {
+    "title": "GAIA Agent",
+    "description": "This project builds an AI agent for the Hugging Face Agent Course benchmark. It fetches complex GAIA questions via API, processes them with a LangGraph state machine, and uses tools like web search, Wikipedia, Arxiv, calculator, and a Supabase vector store. The agent submits answers back to the API through a Gradio interface for scoring.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/GAIA_Agent"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Stockify: AI Stock Investment Platform",
+    "description": "A next-gen AI platform for smart stock analysis, news aggregation, and investment reporting. Combines Yahoo Finance data, NLP-powered news insights, multi-agent LLM analysis, and FastAPI+React for modular, scalable, and real-time financial intelligence.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/Stockify"
+      },
+      {
+        "label": "Demo",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:7340836291284029440/"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Depth Estimation Project",
+    "description": "This project performs monocular depth estimation on images using two state-of-the-art pre-trained models: ZoeDepth and DPT-Hybrid-Midas. It processes a given image, interpolates the predicted depth maps, and visualizes the results using both Matplotlib and OpenCV.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/Depth-Estimation"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Invoice AI Processor",
+    "description": "An AI-powered app that extracts invoice data using EasyOCR. It detects fields like date, amount, invoice number, seller/client info, and tax ID. Features include CSV export, visual annotations, a React+TS frontend, and FastAPI backend.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/Invoice_AI_Processor"
+      }
+    ],
+    "hasSignedDemo": true
+  },
+  {
+    "title": "Knowledge Graph-Enhanced RAG System",
+    "description": "Engineered a hybrid system that integrates a knowledge graph with Retrieval-Augmented Generation (RAG) to improve LLM reliability. Leveraged LangChain and Neo4j to enable contextual, grounded answers in generative applications such as enterprise chatbots.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/knowledge-graph-rag-system"
+      }
+    ],
+    "hasSignedDemo": true
+  },
+  {
+    "title": "INSAT GPT",
+    "description": "InsatGPT is a conversational AI assistant tailored for the students, faculty, and administrative staff of INSAT (Institut National des Sciences Appliquées et de Technologie). Designed to streamline access to academic and institutional information, InsatGPT can answer queries related to schedules, courses, administrative procedures, events, and more—serving as a 24/7 support system that enhances communication and efficiency within the INSAT community.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/INSAT_GPT"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Excusely: The AI-Powered Excuse Generator",
+    "description": "Developed a modular automation pipeline using n8n, Firebase, and OpenAI API to generate and manage user-specific excuses.Demonstrated practical deployment of AI using low-code tools, serverless functions, and prompt-driven generation.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/Excusely-with-n8n-and-Firebase-AI-Studio"
+      }
+    ],
+    "hasSignedDemo": true
+  },
+  {
+    "title": "Pump Watch",
+    "description": "Pump Watch is a groundbreaking solution for industrial pump station maintenance, leveraging AI and advanced technology for predictive maintenance. By monitoring motor currents and performing frequency domain analysis, it detects issues early, minimizing downtime and costs. Integrated with Pumpo, an intelligent chatbot, the system offers operators real-time insights, maintenance schedules, and diagnostic support, enhancing usability and efficiency.",
+    "links": [
+      {
+        "label": "Demo",
+        "href": "https://drive.google.com/file/d/1g7YtpuBlO-fw2MUk7cNT_u6a55-pq7Ug/view?usp=sharing"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Protest Banner Interpreter",
+    "description": "Designed an AI-powered computer vision system that interprets text from protest banners in real-time. Leveraged Vision Transformers (ViT) and Segment Anything Model (SAM) to generate accurate masks for banners in images, enabling precise text extraction. The system integrates OCR (Optical Character Recognition) and natural language processing (NLP) techniques to analyze and understand key messages conveyed in banners.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/Protest-Banner-Interpreter"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Wind Turbines Predictive Maintenance",
+    "description": "This wind turbine failure prediction project is an innovative solution for enhancing renewable energy reliability, combining AI with advanced data analytics for predictive maintenance.At its core is a dynamic dashboard offering real-time monitoring of turbine performance and environmental conditions. With features like active power analysis and wind speed tracking, it provides actionable insights to optimize operations and ensure sustainability",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/DigimyTch-Internship"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Ayyus Labs",
+    "description": "Ayyus Aura is an innovative, cost-effective solution designed to enhance engagement in museums and cultural spaces. It combines interactive companion apps, AR/VR experiences, and touch-sensitive projections (AyyusHaptics) to create immersive, customizable exhibits.",
+    "links": [
+      {
+        "label": "Demo",
+        "href": "https://drive.google.com/file/d/1RAjlkxjIJa142v03ppBg8wLl23A9xPxf/view"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "AI Blog Post Summarization with Web Scraping",
+    "description": "AI Blog Post Summarization with Web Scraping is an innovative project that streamlines content consumption by combining web scraping and AI summarization. Using Beautiful Soup to extract blog content and Hugging Face's Transformers library for summarization, it transforms lengthy articles into concise, easy-to-read summaries.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/AI-Blog-Post-Summarization-Project"
+      },
+      {
+        "label": "Demo",
+        "href": "https://www.linkedin.com/posts/fedy-ben-hassouna-9232a7249_machinelearning-webscraping-nlp-activity-7224812184772485120-GG6v?utm_source=share&utm_medium=member_desktop"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Dino Game Automation",
+    "description": "is about controlling the dino game using eye blinks. So, i developed an innovative system using MediaPipe, PyAutoGUI, and OpenCV that tracks eye blinks to simulate the jumps of the dinosaur, making the game more accessible and engaging.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/PPP_Dino_Game"
+      },
+      {
+        "label": "Demo",
+        "href": "https://www.linkedin.com/posts/fedy-ben-hassouna-9232a7249_excited-to-share-our-latest-project-controlling-activity-7204246323238219776-7yXY?utm_source=share&utm_medium=member_desktop"
+      }
+    ],
+    "hasSignedDemo": false
+  },
+  {
+    "title": "Thomas was Never Alone",
+    "description": "Thomas was Never Alone is a 2D platformer game built using Flask , Spacy and Pygame . This project transforms the original concept into a vibrant and joyful experience for kids, featuring colorful visuals and interactive gameplay. Players control a character named Thomas, issuing commands to move left, right, jump, and change the character's color, all set against a dynamic backdrop.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/fedy-benhassouna/Thomas_was_Never_Alone?tab=readme-ov-file"
+      },
+      {
+        "label": "Demo",
+        "href": "https://www.youtube.com/watch?v=Zp_TGSApLiU"
+      }
+    ],
+    "hasSignedDemo": false
+  }
+]
