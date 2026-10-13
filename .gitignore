@@ -29,7 +29,3 @@ Server/node_modules
 Server/config.js
 # vite
 /dist
-
-# Local experimental recovery and browser QA; never publish these.
-/.checkpoints/
-/.qa/

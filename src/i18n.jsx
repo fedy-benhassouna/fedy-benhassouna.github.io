@@ -8,7 +8,7 @@ const LANGS = { en, fr };
 function readInitial() {
   try {
     const saved = localStorage.getItem(KEY);
-    if (Object.hasOwn(LANGS, saved)) return saved;
+    if (saved in LANGS) return saved;
   } catch {
     /* storage unavailable */
   }
