@@ -13,7 +13,7 @@ browser, and first-time visitors with a French browser get French by default.
 - Add a project: push an entry into `projects` (set `featured: true` for one of the three large cards).
 - Add a role: push an entry into `experience` and drop its logo in `public/logos/`.
 - Add a skill icon: import it in `src/components/Skills.jsx`, add it to `ICONS`, then reference the key in `profile.js`.
-- Replace the CV: overwrite `public/Fedy_Ben_Hassouna_CV.pdf`.
+- Replace the CV: overwrite `public/Fedy_Ben_Hassouna_CV_EN.pdf`.
 - Update the social preview: regenerate `public/og.png` (1200×630).
 
 ## Run

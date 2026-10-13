@@ -9,6 +9,7 @@ export const site = {
   ...siteEn,
   role: "Ingénieur IA",
   location: "Aix-en-Provence, France · originaire de Tunis, Tunisie",
+  cv: "/Fedy_Ben_Hassouna_CV_FR.pdf",
   status: "Ouvert aux postes d'Ingénieur IA · 2026",
 };
 

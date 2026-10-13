@@ -9,10 +9,10 @@ export const site = {
   role: "AI Engineer",
   url: "https://fedy-benhassouna.github.io",
   location: "Aix-en-Provence, France · from Tunis, Tunisia",
-  email: "fedy.benhassouna@insat.ucar.tn",
+  email: "benhassouna.fedy@gmail.com",
   github: "https://github.com/fedy-benhassouna",
   linkedin: "https://www.linkedin.com/in/fedy-ben-hassouna-9232a7249/",
-  cv: "/Fedy_Ben_Hassouna_CV.pdf",
+  cv: "/Fedy_Ben_Hassouna_CV_EN.pdf",
   status: "Open to AI Engineer roles · 2026",
 };
 
