@@ -4,10 +4,7 @@ import WorldMap from "./WorldMap";
 import Flag from "./Flag";
 
 export default function About() {
-  const { about, site, ui, experience } = useContent();
-
-  // One logo per company, in timeline order (most recent first).
-  const companies = experience.filter((e, i, arr) => arr.findIndex((x) => x.company === e.company) === i);
+  const { about, site, ui, workedWith } = useContent();
 
   return (
     <section className="section" id="about" aria-labelledby="about-title">
@@ -35,17 +32,18 @@ export default function About() {
           <Reveal className="card worked-card" delay={120}>
             <p className="mono worked-label">{ui.about.workedWith}</p>
             <ul className="worked-logos" aria-label={ui.about.workedWith}>
-              {companies.map((c) => (
-                <li key={c.company}>
-                  {c.url ? (
-                    <a href={c.url} target="_blank" rel="noreferrer" className="worked-logo" title={c.company}>
-                      <img src={c.logo} alt={c.company} loading="lazy" />
-                    </a>
-                  ) : (
-                    <span className="worked-logo" title={c.company}>
-                      <img src={c.logo} alt={c.company} loading="lazy" />
-                    </span>
-                  )}
+              {workedWith.map((c) => (
+                <li key={c.name}>
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`worked-logo ${c.dark ? "is-dark" : ""}`}
+                    title={c.name}
+                    aria-label={c.name}
+                  >
+                    <img src={c.logo} alt="" loading="lazy" />
+                  </a>
                 </li>
               ))}
             </ul>

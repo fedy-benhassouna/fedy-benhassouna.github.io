@@ -552,7 +552,7 @@
 
 .worked-logos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
   gap: var(--s-3);
 }
 
@@ -567,8 +567,12 @@
   transition: transform var(--dur) var(--ease-out), border-color var(--dur), box-shadow var(--dur);
 }
 
+.worked-logo.is-dark {
+  background: #15151d;
+}
+
 .worked-logo img {
-  max-height: 44px;
+  max-height: 40px;
   max-width: 100%;
   object-fit: contain;
 }

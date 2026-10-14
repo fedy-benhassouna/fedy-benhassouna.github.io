@@ -269,6 +269,26 @@ export const projects = [
   },
 ];
 
+// Logos shown in the "Worked with" block. dark: true puts the logo on a dark tile (for white logos).
+export const workedWith = [
+  { name: "Orymate", logo: "/logos/orymate.png", url: "https://orymate.ai" },
+  { name: "Marketplace Distribution", logo: "/logos/marketplace-distribution.webp", url: "https://marketplacedistribution.com/" },
+  { name: "Qatar Computing Research Institute", logo: "/worked/qcri.png", url: "https://www.hbku.edu.qa/en/qcri" },
+  { name: "Oryzon Partners", logo: "/logos/oryzon-partners.webp", url: "https://oryzonpartners.io/" },
+  { name: "WiseVision AI Technologies", logo: "/logos/wisevision.webp", url: "https://www.linkedin.com/company/wisevisiontechnologies/" },
+  { name: "Magasin Général", logo: "/worked/mg.png", url: "https://www.mg.tn/" },
+  { name: "BH Assurance", logo: "/worked/bh-assurance.png", url: "https://www.bhassurance.com.tn/" },
+  { name: "CARTE Assurances", logo: "/worked/carte-assurances.png", url: "https://www.carte.com.tn/" },
+  { name: "Seekmake", logo: "/logos/seekmake.webp", url: "https://www.linkedin.com/company/seekmake/" },
+  { name: "TAIS NextGen", logo: "/logos/tais.webp", url: "https://tunisian-ai-society.org/" },
+  { name: "MoroccoAI", logo: "/worked/moroccoai.png", url: "https://morocco.ai/" },
+  { name: "Ready Tensor", logo: "/worked/ready-tensor.svg", url: "https://www.readytensor.ai/", dark: true },
+  { name: "IEEE INSAT Student Branch", logo: "/worked/ieee-insat.png", url: "https://ieee.insat.tn/" },
+  { name: "Junior Robotics", logo: "/logos/junior-robotics.webp", url: "https://www.linkedin.com/company/junior-robotics/" },
+  { name: "MUST University", logo: "/logos/must-university.webp", url: "https://www.linkedin.com/company/must-universitytn/" },
+  { name: "Digimytch", logo: "/logos/digimytch.webp", url: "https://www.linkedin.com/company/digimytch/" },
+];
+
 export const experience = [
   {
     role: "AI Founding Engineer",

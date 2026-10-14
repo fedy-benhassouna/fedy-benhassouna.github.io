@@ -3,7 +3,9 @@
 // et la liste des compétences sont partagés avec la version anglaise.
 // ---------------------------------------------------------------------------
 
-import { site as siteEn, skills as skillsEn } from "./profile";
+import { site as siteEn, skills as skillsEn, workedWith } from "./profile";
+
+export { workedWith };
 
 export const site = {
   ...siteEn,
