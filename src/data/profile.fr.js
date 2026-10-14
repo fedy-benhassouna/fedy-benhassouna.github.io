@@ -45,12 +45,12 @@ export const about = {
     "Mon travail se situe là où les LLM rencontrent de vraies contraintes. Un retrieval qui doit être juste, des agents qui doivent aller au bout, des modèles qui doivent tourner sur un Raspberry Pi ou dans un budget Azure.",
     "Je mesure ce que je construis. Chaque projet ici a un chiffre associé, parce qu'une fonctionnalité IA que personne ne peut évaluer est un risque, pas un produit.",
   ],
-  facts: [
-    { k: "Basé à", v: "Aix-en-Provence, FR" },
-    { k: "Expérience", v: "Tunisie · Qatar · France · USA" },
-    { k: "Focus", v: "Agents LLM · RAG · MLOps" },
-    { k: "Langues", v: "Arabe · Anglais · Français" },
-    { k: "Communauté", v: "IEEE INSAT · Mentor TAIS" },
+  countries: [
+    { code: "TN", name: "Tunisie" },
+    { code: "QA", name: "Qatar" },
+    { code: "FR", name: "France" },
+    { code: "US", name: "États-Unis" },
+    { code: "MA", name: "Maroc" },
   ],
 };
 
@@ -445,7 +445,7 @@ export const ui = {
   skip: "Aller au contenu",
   nav: { github: "GitHub", toLight: "Passer en mode clair", toDark: "Passer en mode sombre", menu: "Ouvrir la navigation", home: "accueil" },
   hero: { viewProjects: "Voir les projets", downloadCv: "Télécharger le CV", contact: "Contact", keyResults: "Résultats clés", countries: "Pays d'expérience" },
-  about: { eyebrow: "01 — À propos", portrait: "Portrait de" },
+  about: { eyebrow: "01 — À propos", portrait: "Portrait de", workedWith: "Ils m'ont fait confiance", map: "Où j'ai travaillé et étudié" },
   skills: { eyebrow: "02 — Compétences", title: "La stack avec laquelle je livre.", sub: "Regroupée par usage. Tout ce qui est ici a servi dans un projet de cette page." },
   projects: {
     eyebrow: "03 — Projets",

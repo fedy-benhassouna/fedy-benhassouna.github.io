@@ -48,12 +48,12 @@ export const about = {
     "My work sits where LLMs meet real constraints. Retrieval that has to be correct, agents that have to finish the job, and models that have to run on a Raspberry Pi or an Azure budget.",
     "I measure what I build. Every project here has a number attached because an AI feature nobody can evaluate is a liability, not a product.",
   ],
-  facts: [
-    { k: "Based in", v: "Aix-en-Provence, FR" },
-    { k: "Worked in", v: "Tunisia · Qatar · France · USA" },
-    { k: "Focus", v: "LLM agents · RAG · MLOps" },
-    { k: "Languages", v: "Arabic · English · French" },
-    { k: "Community", v: "IEEE INSAT · TAIS mentor" },
+  countries: [
+    { code: "TN", name: "Tunisia" },
+    { code: "QA", name: "Qatar" },
+    { code: "FR", name: "France" },
+    { code: "US", name: "USA" },
+    { code: "MA", name: "Morocco" },
   ],
 };
 
@@ -524,7 +524,7 @@ export const ui = {
   skip: "Skip to content",
   nav: { github: "GitHub", toLight: "Switch to light mode", toDark: "Switch to dark mode", menu: "Toggle navigation", home: "home" },
   hero: { viewProjects: "View projects", downloadCv: "Download CV", contact: "Contact", keyResults: "Key results", countries: "Countries worked in" },
-  about: { eyebrow: "01 — About", portrait: "Portrait of" },
+  about: { eyebrow: "01 — About", portrait: "Portrait of", workedWith: "Worked with", map: "Where I've worked and trained" },
   skills: { eyebrow: "02 — Skills", title: "The stack I ship with.", sub: "Grouped by what it's for. Everything here has been used in a project on this page." },
   projects: {
     eyebrow: "03 — Projects",
