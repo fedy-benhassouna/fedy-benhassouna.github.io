@@ -3,7 +3,6 @@ import { useContent } from "../i18n";
 import NeuralCanvas from "./NeuralCanvas";
 import Typewriter from "./Typewriter";
 import Reveal from "./Reveal";
-import Flag from "./Flag";
 
 export default function Hero() {
   const { hero, site, ui } = useContent();
@@ -63,14 +62,6 @@ export default function Hero() {
               <img src="/mainimage.webp" alt={site.name} width="520" height="520" fetchpriority="high" />
               <span className="hero-photo-ring" aria-hidden="true" />
             </div>
-            <ul className="hero-countries" aria-label={ui.hero.countries}>
-              {hero.countries.map((c) => (
-                <li key={c.code}>
-                  <Flag code={c.code} />
-                  {c.name}
-                </li>
-              ))}
-            </ul>
           </Reveal>
         </div>
 

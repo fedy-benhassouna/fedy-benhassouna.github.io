@@ -26,12 +26,6 @@ export const hero = {
   ],
   sub:
     "Ingénieur IA, 10 expériences entre laboratoires de recherche, startups et industrie en Tunisie, au Qatar, en France et aux États-Unis. Je mène les idées LLM et ML du notebook à la production : retrieval, agents, évaluation, déploiement.",
-  countries: [
-    { code: "TN", name: "Tunisie" },
-    { code: "QA", name: "Qatar" },
-    { code: "FR", name: "France" },
-    { code: "US", name: "États-Unis" },
-  ],
   stats: [
     { value: "70%", label: "d'arrêts de pompes en moins" },
     { value: "80%", label: "de reporting manuel en moins" },
@@ -46,13 +40,6 @@ export const about = {
     "Je suis Fedy, ingénieur IA formé à l'INSAT à Tunis, aujourd'hui founding engineer chez Orymate en France. J'ai travaillé avec des équipes en Tunisie, au Qatar, en France et aux États-Unis, et passé les trois dernières années dans la boucle complète : données, modèle, agent, API, déploiement.",
     "Mon travail se situe là où les LLM rencontrent de vraies contraintes. Un retrieval qui doit être juste, des agents qui doivent aller au bout, des modèles qui doivent tourner sur un Raspberry Pi ou dans un budget Azure.",
     "Je mesure ce que je construis. Chaque projet ici a un chiffre associé, parce qu'une fonctionnalité IA que personne ne peut évaluer est un risque, pas un produit.",
-  ],
-  countries: [
-    { code: "TN", name: "Tunisie" },
-    { code: "QA", name: "Qatar" },
-    { code: "FR", name: "France" },
-    { code: "US", name: "États-Unis" },
-    { code: "MA", name: "Maroc" },
   ],
 };
 

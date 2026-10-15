@@ -435,40 +435,6 @@
   pointer-events: none;
 }
 
-.hero-countries {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--s-2);
-}
-
-.hero-countries li {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--line);
-  background: var(--bg-elev);
-  font-size: var(--text-sm);
-  color: var(--text-2);
-}
-
-.flag {
-  display: inline-block;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px var(--line);
-  vertical-align: middle;
-  flex-shrink: 0;
-}
-
-.tl-company-line {
-  display: flex;
-  align-items: center;
-  gap: var(--s-2);
-  flex-wrap: wrap;
-}
-
 @media (min-width: 900px) {
   .hero-grid {
     grid-template-columns: 1.35fr 1fr;
@@ -531,85 +497,36 @@
   pointer-events: none;
 }
 
-/* Worked with + map ------------------------------------------------------- */
+/* Worked with + full-bleed map ------------------------------------------- */
 
-.worked-grid {
-  display: grid;
-  gap: var(--s-4);
-  margin-top: var(--s-7);
+.worked-head {
+  margin-top: var(--s-9);
+  margin-bottom: 0;
+  max-width: none;
 }
 
-.worked-card {
-  padding: var(--s-5);
-  display: grid;
-  gap: var(--s-4);
-  align-content: start;
-}
-
-.worked-label {
-  color: var(--text-3);
-}
-
-.worked-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
-  gap: var(--s-3);
-}
-
-.worked-logo {
-  display: grid;
-  place-items: center;
-  height: 64px;
-  padding: var(--s-2);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--line);
-  background: #fff;
-  transition: transform var(--dur) var(--ease-out), border-color var(--dur), box-shadow var(--dur);
-}
-
-.worked-logo.is-dark {
-  background: #15151d;
-}
-
-.worked-logo img {
-  max-height: 40px;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.worked-logo:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  box-shadow: 0 12px 30px -16px var(--accent-glow);
-}
-
-.map-card {
+.map-bleed {
   position: relative;
-  overflow: hidden;
-  grid-template-rows: auto 1fr auto;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: var(--s-5);
 }
 
 .world-map {
   width: 100%;
   height: auto;
-  max-height: 100%;
   display: block;
-  align-self: center;
 }
 
 .world-map .map-dim circle {
   fill: var(--text-3);
-  opacity: 0.28;
+  opacity: 0.3;
 }
 
 .world-map .map-hot circle {
   fill: var(--accent-2);
   opacity: 0.95;
   animation: map-pulse 3s ease-in-out infinite;
-}
-
-:root[data-theme="light"] .world-map .map-dim circle {
-  opacity: 0.35;
 }
 
 @keyframes map-pulse {
@@ -622,27 +539,65 @@
   }
 }
 
-.map-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s-2);
+/* Logos: stacked grid on small screens, floated into the Atlantic on wide ones */
+.worked-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+  padding: var(--s-4) var(--gutter) 0;
 }
 
-.map-legend li {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.3rem 0.65rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--line);
-  background: var(--bg-elev-2);
-  font-size: var(--text-sm);
-  color: var(--text-2);
+.worked-logo {
+  display: grid;
+  place-items: center;
+  height: 88px;
+  padding: var(--s-3);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #15151d;
+  box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.7);
+  transition: transform var(--dur) var(--ease-out), border-color var(--dur), box-shadow var(--dur);
 }
 
-@media (min-width: 900px) {
-  .worked-grid {
-    grid-template-columns: 1fr 1.2fr;
+.worked-logo img {
+  max-height: 56px;
+  max-width: 100%;
+  object-fit: contain;
+  /* Flatten every logo to a white silhouette */
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}
+
+.worked-logo:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 30px -16px var(--accent-glow);
+}
+
+@media (min-width: 640px) {
+  .worked-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  /* Atlantic gap in the map viewport (lon -126..60): roughly 33% to 58% of the width */
+  .worked-logos {
+    position: absolute;
+    left: 33.5%;
+    width: 24%;
+    top: 50%;
+    transform: translateY(-50%);
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(0.5rem, 0.9vw, 1rem);
+    padding: 0;
+  }
+  .worked-logo {
+    height: clamp(64px, 6.2vw, 96px);
+    padding: clamp(0.5rem, 0.8vw, 0.9rem);
+  }
+  .worked-logo img {
+    max-height: clamp(40px, 4.2vw, 64px);
   }
 }
 

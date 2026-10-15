@@ -27,12 +27,6 @@ export const hero = {
   ],
   sub:
     "AI Engineer with 10 roles across research labs, startups, and industry in Tunisia, Qatar, France, and the US. I take LLM and ML ideas from notebook to production: retrieval, agents, evaluation, deployment.",
-  countries: [
-    { code: "TN", name: "Tunisia" },
-    { code: "QA", name: "Qatar" },
-    { code: "FR", name: "France" },
-    { code: "US", name: "USA" },
-  ],
   stats: [
     { value: "70%", label: "less pump downtime" },
     { value: "80%", label: "less manual reporting" },
@@ -47,13 +41,6 @@ export const about = {
     "I'm Fedy, an AI engineer trained at INSAT in Tunis, now a founding engineer at Orymate in France. I've worked with teams in Tunisia, Qatar, France, and the US, and spent the last three years inside the full loop: data, model, agent, API, deployment.",
     "My work sits where LLMs meet real constraints. Retrieval that has to be correct, agents that have to finish the job, and models that have to run on a Raspberry Pi or an Azure budget.",
     "I measure what I build. Every project here has a number attached because an AI feature nobody can evaluate is a liability, not a product.",
-  ],
-  countries: [
-    { code: "TN", name: "Tunisia" },
-    { code: "QA", name: "Qatar" },
-    { code: "FR", name: "France" },
-    { code: "US", name: "USA" },
-    { code: "MA", name: "Morocco" },
   ],
 };
 
@@ -271,22 +258,12 @@ export const projects = [
 
 // Logos shown in the "Worked with" block. dark: true puts the logo on a dark tile (for white logos).
 export const workedWith = [
-  { name: "Orymate", logo: "/logos/orymate.png", url: "https://orymate.ai" },
-  { name: "Marketplace Distribution", logo: "/logos/marketplace-distribution.webp", url: "https://marketplacedistribution.com/" },
   { name: "Qatar Computing Research Institute", logo: "/worked/qcri.png", url: "https://www.hbku.edu.qa/en/qcri" },
-  { name: "Oryzon Partners", logo: "/logos/oryzon-partners.webp", url: "https://oryzonpartners.io/" },
-  { name: "WiseVision AI Technologies", logo: "/logos/wisevision.webp", url: "https://www.linkedin.com/company/wisevisiontechnologies/" },
   { name: "Magasin Général", logo: "/worked/mg.png", url: "https://www.mg.tn/" },
   { name: "BH Assurance", logo: "/worked/bh-assurance.png", url: "https://www.bhassurance.com.tn/" },
   { name: "CARTE Assurances", logo: "/worked/carte-assurances.png", url: "https://www.carte.com.tn/" },
-  { name: "Seekmake", logo: "/logos/seekmake.webp", url: "https://www.linkedin.com/company/seekmake/" },
-  { name: "TAIS NextGen", logo: "/logos/tais.webp", url: "https://tunisian-ai-society.org/" },
   { name: "MoroccoAI", logo: "/worked/moroccoai.png", url: "https://morocco.ai/" },
   { name: "Ready Tensor", logo: "/worked/ready-tensor.svg", url: "https://www.readytensor.ai/", dark: true },
-  { name: "IEEE INSAT Student Branch", logo: "/worked/ieee-insat.png", url: "https://ieee.insat.tn/" },
-  { name: "Junior Robotics", logo: "/logos/junior-robotics.webp", url: "https://www.linkedin.com/company/junior-robotics/" },
-  { name: "MUST University", logo: "/logos/must-university.webp", url: "https://www.linkedin.com/company/must-universitytn/" },
-  { name: "Digimytch", logo: "/logos/digimytch.webp", url: "https://www.linkedin.com/company/digimytch/" },
 ];
 
 export const experience = [
@@ -544,7 +521,7 @@ export const ui = {
   skip: "Skip to content",
   nav: { github: "GitHub", toLight: "Switch to light mode", toDark: "Switch to dark mode", menu: "Toggle navigation", home: "home" },
   hero: { viewProjects: "View projects", downloadCv: "Download CV", contact: "Contact", keyResults: "Key results", countries: "Countries worked in" },
-  about: { eyebrow: "01 — About", portrait: "Portrait of", workedWith: "Worked with", map: "Where I've worked and trained" },
+  about: { eyebrow: "01 — About", portrait: "Portrait of", workedWith: "Worked with & trusted by", map: "Where I've worked and trained" },
   skills: { eyebrow: "02 — Skills", title: "The stack I ship with.", sub: "Grouped by what it's for. Everything here has been used in a project on this page." },
   projects: {
     eyebrow: "03 — Projects",
