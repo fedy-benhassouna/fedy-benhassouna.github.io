@@ -734,7 +734,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: var(--s-4);
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-4);
+}
+
+.project-feature-meta .project-result {
+  flex-shrink: 1;
+  min-width: 0;
+  margin-left: auto;
 }
 
 .project-index {
@@ -874,18 +881,32 @@
 }
 
 .project-card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: var(--s-3);
+  display: grid;
+  gap: var(--s-2);
+  min-width: 0;
 }
 
 .project-card h3 {
   font-size: var(--text-lg);
+  overflow-wrap: anywhere;
+}
+
+/* In compact cards the metric sits under the title so long labels never overflow. */
+.project-card .project-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px var(--s-2);
+  text-align: left;
+  min-width: 0;
 }
 
 .project-card .project-result strong {
   font-size: 1.25rem;
+}
+
+.project-card .project-result span {
+  overflow-wrap: anywhere;
 }
 
 .project-card p {
